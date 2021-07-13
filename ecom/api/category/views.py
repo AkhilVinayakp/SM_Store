@@ -10,5 +10,5 @@ from .serializers import CategorySerializer
 
 class CategoryViewSet(viewsets.ViewSet):
     """specifying the query to pull all the Category model data"""
-    queryset = Category.objects.all().order_by('name')
+    queryset = Category.objects.all()
     serializer_class = CategorySerializer
